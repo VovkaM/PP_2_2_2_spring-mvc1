@@ -9,7 +9,6 @@ import web.service.CarService;
 
 @Controller
 public class CarController {
-
     private CarService carService;
 
     @Autowired
@@ -21,7 +20,7 @@ public class CarController {
     @GetMapping(value = "/cars")
     public String carsPage(@RequestParam(value = "count", required = false,
             defaultValue = "5") Integer count, Model model) {
-        model.addAttribute("cars", carService.GetTheNumberOfCars(count));
+            model.addAttribute("cars", carService.getCarListOnCount(count));
         return "cars";
     }
 }

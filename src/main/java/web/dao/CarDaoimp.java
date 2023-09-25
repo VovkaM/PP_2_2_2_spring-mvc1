@@ -19,8 +19,9 @@ public class CarDaoimp implements CarDao {
             cars.add(new Car("Hissan", "Black", 3));
         }
 
-    public List<Car> GetaListOfCars() {
-        return cars;
+    public List<Car> getCars() {
+
+            return cars;
     }
 }
 
