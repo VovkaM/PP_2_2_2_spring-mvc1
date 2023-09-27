@@ -1,8 +1,7 @@
 package web.model;
 
-import org.springframework.stereotype.Component;
 import java.util.Objects;
-@Component
+
 public class Car {
     private String brand;
     private String color;
@@ -18,32 +17,26 @@ public class Car {
     }
 
     public String getBrand() {
-
         return brand;
     }
 
     public String getColor() {
-
         return color;
     }
 
     public int getSeries() {
-
         return series;
     }
 
     public void setBrand(String brand) {
-
         this.brand = brand;
     }
 
     public void setColor(String color) {
-
         this.color = color;
     }
 
     public void setSeries(int series) {
-
         this.series = series;
     }
 
